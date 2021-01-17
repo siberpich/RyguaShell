@@ -16,12 +16,12 @@ echo -e "                 \ \'      "
 echo -e "                  \ \     "
 echo -e "                   '-'    \e[1;97m "
 echo ""
-echo -e "\e[1;91m [+] YouTube: \e[1;92mTermuxProfessor"
-echo -e "\e[1;91m [+] Github: \e[1;92mtermuxprofessor\e[1;97m"
+echo -e "\e[1;91m [+] Düzenleyen: \e[1;92mRygua"
+echo -e "\e[1;91m [+] Dil: \e[1;92mTurkce\e[1;97m"
 echo ""
-read -p " Does you want to install Parrot Shell in Termux?(Yes/No) : " input
+read -p "Kurulum Başlasınmı ?(evt/hyr) : " input
 
-if [[ $input == Yes || $input == yes || $input == y || $input == Y ]]; then
+if [[ $input == evt || $input == evet || $input == y || $input == Y ]]; then
     clear
     cp bash.bashrc $HOME
     cd /data/data/com.termux/files/usr/etc
@@ -29,10 +29,10 @@ if [[ $input == Yes || $input == yes || $input == y || $input == Y ]]; then
     rm -rf bash.bashrc
     cd $HOME
     mv bash.bashrc /data/data/com.termux/files/usr/etc
-    echo -e "\e[1;91mSuccessfully Installed"
-    echo -e "Restart Termux"
+    echo -e "\e[1;91mKurulum Tamam"
+    echo -e "Tekrar Başlatin"
     exit  3
-elif [[ $input == No || $input == no || $input == n || $input == N ]]; then
+elif [[ $input == hyr || $input == hyr || $input == n || $input == N ]]; then
 exit 2
 else
 echo -e "\e[1;91mInvalid Option"
