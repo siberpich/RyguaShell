@@ -29,7 +29,7 @@ if [[ $input == Yes || $input == yes || $input == y || $input == Y ]]; then
     rm -rf bash.bashrc
     cd $HOME
     mv bash.bashrc /data/data/com.termux/files/usr/etc
-    echo -e "\e[1;91mSuccessfully Installed"
+    echo -e "\e[1;91mKurulum Tamam"
     echo -e "Restart Termux"
     exit  3
 elif [[ $input == No || $input == no || $input == n || $input == N ]]; then
